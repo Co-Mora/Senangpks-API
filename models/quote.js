@@ -99,8 +99,18 @@ const quoteSchema = new mongoose.Schema({
     },
     additionalCoverage: {
         type: Array,
-        required: true,
+        default: []
     },
+    basicPremium: {
+        type: String,
+        trim: true,
+        required: true
+    },
+    grandTotalAmount: {
+        type: String,
+        required: true,
+        trim: true
+    }
 
 });
 

@@ -1,19 +1,32 @@
+const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
+
+
 const epxress = require('express');
 const app = epxress();
+const helmet = require('helmet');
 const quotes = require('./routes/quotes');
+
 const registerPolicies = require('./routes/policyRegisters');
+const makeClaims = require('./routes/makeClaims')
+const mongoose = require('mongoose')
 
-const debug = require('debug')('app:startup')
 
+mongoose.connect('mongodb://localhost/senangpks')
+  .then(() => console.log('Connected to MongoDB...'))
+  .catch(err => console.error('Could not connect to MongoDB...', err));
 
+app.use(helmet());
+app.use(epxress.json())
+app.use(epxress.urlencoded({extended: true}))
 app.use('/api/v1/quotes', quotes);
 app.use('/api/v1/registerPolicy', registerPolicies)
-
+app.use('/api/v1/makeClaim', makeClaims)
 
 
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-    debug(`server running on port ${port}....`);
+    console.log(`server running on port ${port}....`);
 })

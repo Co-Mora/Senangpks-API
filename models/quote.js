@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
 
-
 const quoteSchema = new mongoose.Schema({
+    
     companyID: {
-        type: mongoose.Types.ObjectId(),
+        type: mongoose.Schema.Types.ObjectId,
+        index: true,
+        required: true,
+        auto: true,
     },
     industryName: {
         type: String,
@@ -17,6 +20,13 @@ const quoteSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true,
+        minlength: 2,
+        maxlength: 255
+    },
+    specifyIndustry: {
+        type: String,
+        trim: true,
+        required: true,
         minlength: 2,
         maxlength: 255
     },
@@ -97,10 +107,10 @@ const quoteSchema = new mongoose.Schema({
         minlength: 2,
         maxlength: 255,
     },
-    additionalCoverage: {
-        type: Array,
-        default: []
-    },
+    additionalCoverage: [{
+        indBuss : String,
+        price: String,
+    }],
     basicPremium: {
         type: String,
         trim: true,
@@ -110,7 +120,7 @@ const quoteSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true
-    }
+    }  
 
 });
 
@@ -122,6 +132,7 @@ const quoteValidation = (quote) => {
     const schema = {
         industryName: Joi.string().min(2).max(255).required(),
         businessType: Joi.string().min(2).max(255).required(),
+        specifyIndustry: Joi.string().min(2).max(255).required(),
         companyName:  Joi.string().min(2).max(255).required(),
         companyNumber:  Joi.string().min(2).max(255).required(),
         email:  Joi.string().min(8).max(50).email().required(),
@@ -133,7 +144,10 @@ const quoteValidation = (quote) => {
         machineryEquipments:  Joi.string().min(2).max(255).required(),
         furnitureFittings:  Joi.string().min(2).max(255).required(),
         miscellanous:  Joi.string().min(2).max(255).required(),
-        additionalCoverage:  Joi.array().required()
+        additionalCoverage: Joi.array().required(),
+        basicPremium:  Joi.string().min(2).max(255).required(),
+        grandTotalAmount:  Joi.string().min(2).max(255).required(),
+
     }
 
     return Joi.validate(quote, schema);

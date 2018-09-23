@@ -4,8 +4,12 @@ const Joi = require('joi');
 const { quoteSchema } = require('./quote');
 
 const policyLoginSchema = new mongoose.Schema({
+   
     loginID: {
-        type: mongoose.Types.ObjectId()
+        type: mongoose.Schema.Types.ObjectId,
+        index: true,
+        required: true,
+        auto: true,
     },
     companyNumber: {
         type: String,
@@ -21,10 +25,11 @@ const policyLoginSchema = new mongoose.Schema({
         minlength: 8,
         maxlength: 1024
     },
-    quote: {
-        type: quoteSchema,
+    companyQuote: {
+        type: [quoteSchema],
         required: true
     }
+  
 })
 
 const PolicyLogin = mongoose.model('PolicyLogin', policyLoginSchema);

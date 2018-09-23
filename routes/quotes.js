@@ -4,32 +4,31 @@ const _ = require('lodash');
 
 const {Quote, quoteValidation } = require('../models/quote');
 
-
-
 router.get('/', async (req, res) => {
-    const quotes  = await Quote.find().select('-_id').sort('industryName');
-    res.send(quotes);
+    const quotes  = await Quote.find().select(['-_id', '-__v']).sort('industryName');
+    res.send({result: {quotes}});
 });
 
 
 router.get('/:id', async (req, res) => {
-    const quote = await Quote.findById(req.params.id);
+    const quote = await Quote.find({companyID: req.params.id}).select(['-_id', '-__v']).sort('industryName');
 
-    if(!quote) return res.status(404).send("Invalid ID..");
+    if(!quote) return res.status(404).send({result: {statusCode: 404}});
     
-    res.send(quote);
-})
+    res.send({result: {quote}});
+});
 
-router.post('/create', async (req, res) => {
+router.post('/setQuote', async (req, res) => {
 
     const { error } = quoteValidation(req.body)
-    if(error) return res.status(400).send(error.details[0].message);
+    if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
     let quote = new Quote(_.pick(
         req.body, 
         [
             'industryName',
             'businessType',
+            'specifyIndustry',
             'companyName',
             'companyNumber',
             'email',
@@ -47,17 +46,18 @@ router.post('/create', async (req, res) => {
         ]));
 
         await quote.save();
-        res.send(quote)
+        res.send({result: quote})
 
 
 })
 
 
-router.put('/:id', async (req, res) => {
+router.put('/updateQuote/:id', async (req, res) => {
 
-    const quote = await Quote.findByIdAndUpdat(req.params.id, {
+    const quote = await Quote.update({companyID: req.params.id}, {
         industryName: req.body.industryName,
         businessType: req.body.businessType,
+        specifyIndustry: req.body.specifyIndustry,
         companyName: req.body.companyName,
         companyNumber: req.body.companyNumber,
         email: req.body.email,
@@ -74,24 +74,21 @@ router.put('/:id', async (req, res) => {
         grandTotalAmount: req.body.grandTotalAmount,
     }, {new: true});
 
-    if(!quote) return res.status(404).send("Invalid ID..");
+    if(!quote) return res.status(404).send({result: {statusCode: 404}});
 
-    res.send(quote);
+    res.send({result: quote});
 
 })
 
 
 router.delete('/:id', async(req, res) => {
     
-    const quote = await Quote.findByIdAndRemove(req.params.id)
-    if(!quote) return res.status(404).send('Invalid ID..');
+    const quote = await Quote.remove({companyID: req.params.id})
+    if(!quote) return res.status(404).send({resutl: {statusCode: 404}});
 
-    res.send(quote);
+    res.send({result: quote});
 
 })
-
-
-
 
 
 module.exports = router;

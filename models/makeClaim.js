@@ -6,21 +6,16 @@ const {quoteSchema} = require('./quote')
 const MakeClaim = mongoose.model('MakeClaim', new mongoose.Schema({
 
     claimID: {
-        type: mongoose.Types.ObjectId()
+        type: mongoose.Schema.Types.ObjectId,
+        index: true,
+        required: true,
+        auto: true,
     },
-    companyNumber: {
+    companyNo: {
         type: String,
         required: true,
         trim: true,
         minlength: 5,
-        maxlength: 255
-
-    },
-    password: {
-        type: String,
-        required: true,
-        trim: true,
-        minlength: 8,
         maxlength: 255
     },
     incident: {
@@ -41,9 +36,9 @@ const MakeClaim = mongoose.model('MakeClaim', new mongoose.Schema({
         maxlength: 255
     },
     incidentDate: {
-        type: Date,
+        type: String,
         required: true,
-        default: Date.now
+        default: "2019"
     },
     isDataProtected: {
         type: Boolean,
@@ -63,10 +58,9 @@ const MakeClaim = mongoose.model('MakeClaim', new mongoose.Schema({
         minlength: 5,
         maxlength: 255
     },
-    quote: {
-        type: quoteSchema
+    companyQuote: {
+        type: [quoteSchema],
     }
-
 }));
 
 
@@ -74,16 +68,14 @@ const claimValidation = (claim) => {
 
     const schema = {
 
-        companyNumber: Joi.string().min(5).max(255).required(),
-        password: Joi.string().min(8).max(255).required(),
+        companyNo: Joi.string().min(5).max(255).required(),
         incident: Joi.string().min(5).max(255).required(),
         claimCost: Joi.string().min(5).max(255).required(),
         describeLos: Joi.string().min(5).max(255).required(),
-        incidentDate: Joi.Date().required(),
-        isDataProtected: Joi.Boolean().required(),
+        incidentDate: Joi.string().required(),
+        isDataProtected: Joi.boolean().required(),
         fullName: Joi.string().min(5).max(255).required(),
         icNumber: Joi.string().min(5).max(255).required(),
-
     }
 
     return Joi.validate(claim, schema);

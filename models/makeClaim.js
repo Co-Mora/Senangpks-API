@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
 
-const {quoteSchema} = require('./quote')
+const {quoteSchema} = require('./quote');
 
 const MakeClaim = mongoose.model('MakeClaim', new mongoose.Schema({
 
@@ -17,6 +17,13 @@ const MakeClaim = mongoose.model('MakeClaim', new mongoose.Schema({
         trim: true,
         minlength: 5,
         maxlength: 255
+    },
+    password: {
+        type: String,
+        trim: true,
+        required: true,
+        minLength: 8,
+        maxlength: 1024
     },
     incident: {
         type: String,
@@ -69,6 +76,7 @@ const claimValidation = (claim) => {
     const schema = {
 
         companyNo: Joi.string().min(5).max(255).required(),
+        password: Joi.string().min(8).max(1024).required(),
         incident: Joi.string().min(5).max(255).required(),
         claimCost: Joi.string().min(5).max(255).required(),
         describeLos: Joi.string().min(5).max(255).required(),
@@ -76,11 +84,11 @@ const claimValidation = (claim) => {
         isDataProtected: Joi.boolean().required(),
         fullName: Joi.string().min(5).max(255).required(),
         icNumber: Joi.string().min(5).max(255).required(),
-    }
+    };
 
     return Joi.validate(claim, schema);
 
-}
+};
 
 
 module.exports = {

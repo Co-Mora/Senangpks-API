@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {PolicyRegister, registerValidation} = require('../models/policyRegister')
+const {PolicyRegister, registerValidation} = require('../../models/policyManagement/policyRegister')
 const _ = require('lodash');
 
 router.get('/', async (req, res) => {
@@ -31,7 +31,6 @@ router.post('/setUser', async (req, res) => {
 
     await registerUser.save();
     res.send({result: registerUser});
-
 
 
 });

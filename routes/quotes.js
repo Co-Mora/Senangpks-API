@@ -11,16 +11,16 @@ router.get('/', async (req, res) => {
 
 
 router.get('/:id', async (req, res) => {
-    const quote = await Quote.find({companyID: req.params.id}).select(['-_id', '-__v']).sort('industryName');
+    const quotes = await Quote.find({companyNumber: req.params.id}).select(['-_id', '-__v']).sort('industryName');
 
-    if(!quote) return res.status(404).send({result: {statusCode: 404}});
+    if(!quotes) return res.status(404).send({result: {statusCode: 404}});
     
-    res.send({result: {quote}});
+    res.send({result: {quotes}});
 });
 
 router.post('/setQuote', async (req, res) => {
 
-    const { error } = quoteValidation(req.body)
+    const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
     let quote = new Quote(_.pick(
@@ -40,9 +40,11 @@ router.post('/setQuote', async (req, res) => {
             'machineryEquipments',
             'furnitureFittings',
             'miscellanous',
+            'uploadFile',
             'additionalCoverage',
             'basicPremium',
-            'grandTotalAmount'
+            'grandTotalAmount',
+            'coverNoteFile'
         ]));
 
         await quote.save();
@@ -69,14 +71,16 @@ router.put('/updateQuote/:id', async (req, res) => {
         machineryEquipments: req.body.machineryEquipments,
         furnitureFittings: req.body.furnitureFittings,
         miscellanous: req.body.miscellanous,
+        uploadFile: req.body.uploadFile,
         additionalCoverage: req.body.additionalCoverage,
         basicPremium: req.body.basicPremium,
         grandTotalAmount: req.body.grandTotalAmount,
+        coverNoteFile: req.body.coverNoteFile
     }, {new: true});
 
     if(!quote) return res.status(404).send({result: {statusCode: 404}});
 
-    res.send({result: quote});
+    res.send({result: {statusCode: 200, message: "OK"}});
 
 })
 
@@ -84,7 +88,7 @@ router.put('/updateQuote/:id', async (req, res) => {
 router.delete('/:id', async(req, res) => {
     
     const quote = await Quote.remove({companyID: req.params.id})
-    if(!quote) return res.status(404).send({resutl: {statusCode: 404}});
+    if(!quote) return res.status(404).send({result: {statusCode: 404}});
 
     res.send({result: quote});
 

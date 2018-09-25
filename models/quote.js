@@ -107,6 +107,11 @@ const quoteSchema = new mongoose.Schema({
         minlength: 2,
         maxlength: 255,
     },
+    uploadFile: {
+        type: String,
+        trim: true,
+        required: true
+    },
     additionalCoverage: [{
         indBuss : String,
         price: String,
@@ -120,7 +125,12 @@ const quoteSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true
-    }  
+    },
+    coverNoteFile: {
+        type: String,
+        trim: true,
+        required: true
+    }
 
 });
 
@@ -144,19 +154,20 @@ const quoteValidation = (quote) => {
         machineryEquipments:  Joi.string().min(2).max(255).required(),
         furnitureFittings:  Joi.string().min(2).max(255).required(),
         miscellanous:  Joi.string().min(2).max(255).required(),
+        uploadFile: Joi.string().min(2).max(255).required(),
         additionalCoverage: Joi.array().required(),
         basicPremium:  Joi.string().min(2).max(255).required(),
         grandTotalAmount:  Joi.string().min(2).max(255).required(),
-
-    }
+        coverNoteFile:  Joi.string().required()
+    };
 
     return Joi.validate(quote, schema);
 
-}
+};
 
 
 module.exports = {
     Quote,
     quoteValidation,
     quoteSchema
-}
+};

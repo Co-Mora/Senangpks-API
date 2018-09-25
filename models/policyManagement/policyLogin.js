@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
 
-const { quoteSchema } = require('./quote');
+const { quoteSchema } = require('../quote');
 
 const policyLoginSchema = new mongoose.Schema({
    
@@ -20,17 +20,14 @@ const policyLoginSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true,
         trim: true,
         minlength: 8,
         maxlength: 1024
     },
     companyQuote: {
         type: [quoteSchema],
-        required: true
     }
-  
-})
+});
 
 const PolicyLogin = mongoose.model('PolicyLogin', policyLoginSchema);
 
@@ -39,15 +36,15 @@ const policyLoginValidation = (policyLogin) => {
 
     const schema = {
         companyNumber: Joi.string().min(2).max(255).required(),
-        password: Joi.string().min(8).max(1024).required()
-    }
+        password: Joi.string().min(8).max(1024)
+    };
 
     return Joi.validate(policyLogin, schema);
-}
+};
 
 
 module.exports = {
     PolicyLogin,
     policyLoginValidation,
     policyLoginSchema
-}
+};

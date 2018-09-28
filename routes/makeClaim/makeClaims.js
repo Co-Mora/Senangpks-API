@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const {claimValidation, MakeClaim} = require('../models/makeClaim');
-const {Quote} = require('../models/quote');
+const {claimValidation, MakeClaim} = require('../../models/makeClaim/makeClaim');
+const {Quote} = require('../../models/companyQuote/quote');
 const bcrypt = require('bcrypt');
 
 router.get('/', async (req, res) => {
 
     const makeClaims = await MakeClaim.find().select(['-_id', '-__v', '-password']).sort('companyNo');
-    res.send({result: {makeClaims}});
+    res.send({result: {makeClaims,  count: makeClaims.length}});
 
 });
 

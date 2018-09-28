@@ -6,7 +6,7 @@ const _ = require('lodash');
 router.get('/', async (req, res) => {
 
     const registerUsers = await PolicyRegister.find().select(['-_id', '-__v']).sort('companyName');
-    res.send({result: {registerUsers}});
+    res.send({result: {registerUsers, count: registerUsers.length}});
 
 });
 
@@ -27,7 +27,7 @@ router.post('/setUser', async (req, res) => {
 
     if(error) return res.status(400).send({resutl: {statusCode: 400, errors: error.details[0].message}});
 
-    let registerUser = new PolicyRegister(_.pick(req.body, ['companyName', 'phoneNo', 'email']))
+    let registerUser = new PolicyRegister(_.pick(req.body, ['companyName', 'phoneNo', 'email', 'uploadFile']));
 
     await registerUser.save();
     res.send({result: registerUser});
@@ -45,8 +45,10 @@ router.put('/updateUser/:id', async (req, res) => {
 
         companyName: req.body.companyName,
         phoneNo: req.body.phoneNo,
+        email: req.body.email,
+        uploadFile: req.body.uploadFile
 
-    }, {new: true})
+    }, {new: true});
 
     if(!registerUser) return res.status(404).send({result: {statusCode: 404}});
 

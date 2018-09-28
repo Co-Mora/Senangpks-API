@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const {PolicyLogin, policyLoginValidation} = require('../../models/policyManagement/policyLogin');
-const {Quote} = require('../../models/quote');
+const {Quote} = require('../../models/companyQuote/quote');
 const bcrypt = require('bcrypt');
 
 router.get('/', async (req, res) => {
 
     const policyLogin = await PolicyLogin.find().select(['-_id', '-__v', '-password']).sort('companyNumber');
-    res.send({result: {policyLogin}});
+    res.send({result: {policyLogin, count: policyLogin.length}});
 
 });
 

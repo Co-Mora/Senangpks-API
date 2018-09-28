@@ -1,15 +1,16 @@
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
 
-
 const epxress = require('express');
 const app = epxress();
 const helmet = require('helmet');
-const quotes = require('./routes/quotes');
+const quotes = require('./routes/companyQuote/quotes');
 
 const registerPolicies = require('./routes/policyManagement/policyRegisters');
-const makeClaims = require('./routes/makeClaims');
+const makeClaims = require('./routes/makeClaim/makeClaims');
 const policyLogins = require('./routes/policyManagement/policyLogins');
+const authUsers = require('./routes/authorizedUser/authUsers');
+
 const mongoose = require('mongoose');
 
 
@@ -24,6 +25,7 @@ app.use('/api/v1/quotes', quotes);
 app.use('/api/v1/registerPolicy', registerPolicies);
 app.use('/api/v1/makeClaim', makeClaims);
 app.use('/api/v1/loginPolicy', policyLogins);
+app.use('/api/v1/auth', authUsers);
 
 
 const port = process.env.PORT || 3000;

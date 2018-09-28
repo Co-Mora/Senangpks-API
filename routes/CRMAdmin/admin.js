@@ -1,7 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const router = express.Router();
-const {Admin, adminValidation} = require('../models/admin');
+const {Admin, adminValidation} = require('../../models/CRMAdmin/admin');
 
 
 router.get('/', async (req, res) => {

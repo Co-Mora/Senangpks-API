@@ -2,19 +2,24 @@ const express = require('express');
 const router = express.Router();
 const _ = require('lodash');
 
-const {Quote, quoteValidation } = require('../models/quote');
+const {Quote, quoteValidation } = require('../../models/companyQuote/quote');
+const {MakeClaim} = require('../../models/makeClaim/makeClaim');
 
 router.get('/', async (req, res) => {
     const quotes  = await Quote.find().select(['-_id', '-__v']).sort('industryName');
-    res.send({result: {quotes}});
+    res.send({result: {quotes , count: quotes.length}});
 });
 
 
-router.get('/:id', async (req, res) => {
-    const quotes = await Quote.find({companyNumber: req.params.id}).select(['-_id', '-__v']).sort('industryName');
 
+router.get('/:id', async (req, res) => {
+
+    const quotes = await Quote.findOne({companyNumber: req.params.id}).select(['-_id', '-__v']).sort('industryName');
     if(!quotes) return res.status(404).send({result: {statusCode: 404}});
-    
+
+    const makeClaim = await MakeClaim.find({companyNo: req.params.id}).select(['-_id', '-__v']).limit(10);
+    if(!makeClaim) return res.status(404).send({result: {statusCode: 404}});
+
     res.send({result: {quotes}});
 });
 
@@ -51,7 +56,7 @@ router.post('/setQuote', async (req, res) => {
         res.send({result: quote})
 
 
-})
+});
 
 
 router.put('/updateQuote/:id', async (req, res) => {

@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Joi = require('joi');
 
 
-const PolicyRegister = mongoose.model('PolicyRegister', new mongoose.Schema({
-    
+const partnershipPolicySchema = new mongoose.Schema({
+
     registerID: {
         type: mongoose.Schema.Types.ObjectId,
         index: true,
@@ -37,25 +37,28 @@ const PolicyRegister = mongoose.model('PolicyRegister', new mongoose.Schema({
         required: true
     },
 
-    
-}));
 
-const registerValidation = (register) => {
+
+});
+
+const PartnershipPolicy = mongoose.model('PartnershipPolicy', partnershipPolicySchema);
+
+const  partnerPolicyValidation = (register) => {
 
     const schema = {
         companyName: Joi.string().min(2).max(255).required(),
         phoneNo: Joi.string().min(10).max(20).required(),
-        email: Joi.string().min(5).max(255).email().required(),
-        uploadFile: Joi.string().required(),
-
-    }
+        email: Joi.string().min(5).max(255).email().required()
+        uploadFile: Joi.string().required()
+    };
 
     return Joi.validate(register, schema);
 
-}
+};
 
 
 module.exports = {
-    PolicyRegister,
-    registerValidation
-}
+    PartnershipPolicy,
+    partnershipPolicySchema,
+    partnerPolicyValidation
+};

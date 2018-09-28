@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
 
-const {quoteSchema} = require('./quote');
+const {quoteSchema} = require('../companyQuote/quote');
 
 const MakeClaim = mongoose.model('MakeClaim', new mongoose.Schema({
 

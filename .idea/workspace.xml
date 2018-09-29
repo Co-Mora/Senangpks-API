@@ -2,33 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4979e71-d21a-43cd-968e-83e6be9e97e9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/custom-environment-variables.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/admin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/error.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/startup/routes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/unit/middleware/auth.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/unit/models/authorizedUser/authUser.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tests/integration/companyQuote/quotes.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tests/unit/authorizedUser/authUser.test.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/config/default.json" afterPath="$PROJECT_DIR$/config/default.json" />
       <change beforePath="$PROJECT_DIR$/config/test.json" afterPath="$PROJECT_DIR$/config/test.json" />
       <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" afterPath="$PROJECT_DIR$/middleware/auth.js" />
-      <change beforePath="$PROJECT_DIR$/models/authorizedUser/authUser.js" afterPath="$PROJECT_DIR$/models/authorizedUser/authUser.js" />
-      <change beforePath="$PROJECT_DIR$/models/partnership/partnership.js" afterPath="$PROJECT_DIR$/models/partnership/partnership.js" />
-      <change beforePath="$PROJECT_DIR$/models/partnership/partnershipClaim.js" afterPath="$PROJECT_DIR$/models/partnership/partnershipClaim.js" />
-      <change beforePath="$PROJECT_DIR$/models/partnership/partnershipPolicy.js" afterPath="$PROJECT_DIR$/models/partnership/partnershipPolicy.js" />
-      <change beforePath="$PROJECT_DIR$/models/partnership/partnershipQuote.js" afterPath="$PROJECT_DIR$/models/partnership/partnershipQuote.js" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" afterPath="$PROJECT_DIR$/logfile.log" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" afterPath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
-      <change beforePath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" afterPath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
       <change beforePath="$PROJECT_DIR$/routes/companyQuote/quotes.js" afterPath="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
       <change beforePath="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" afterPath="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
-      <change beforePath="$PROJECT_DIR$/routes/partnership/partnership.js" afterPath="$PROJECT_DIR$/routes/partnership/partnership.js" />
-      <change beforePath="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" afterPath="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
-      <change beforePath="$PROJECT_DIR$/routes/policyManagement/policyRegisters.js" afterPath="$PROJECT_DIR$/routes/policyManagement/policyRegisters.js" />
-      <change beforePath="$PROJECT_DIR$/startup/db.js" afterPath="$PROJECT_DIR$/startup/db.js" />
-      <change beforePath="$PROJECT_DIR$/startup/logging.js" afterPath="$PROJECT_DIR$/startup/logging.js" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/middleware/auth.js" afterPath="$PROJECT_DIR$/middleware/validateObjectId.js" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/models/authorizedUser/authUser.test.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/uncaughtExceptions.log" afterPath="$PROJECT_DIR$/uncaughtExceptions.log" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,11 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="quotes.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/integration/companyQuote/quotes.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="563">
+              <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authUser.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/unit/authorizedUser/authUser.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="makeClaims.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/makeClaim/makeClaims.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,30 +102,36 @@
         <option value="$PROJECT_DIR$/config/package.json" />
         <option value="$PROJECT_DIR$/config/custom-environment-variables.json" />
         <option value="$PROJECT_DIR$/middleware/auth.js" />
-        <option value="$PROJECT_DIR$/models/authorizedUser/authUser.js" />
         <option value="$PROJECT_DIR$/middleware/async.js" />
         <option value="$PROJECT_DIR$/middleware/admin.js" />
         <option value="$PROJECT_DIR$/middleware/error.js" />
-        <option value="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
         <option value="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
         <option value="$PROJECT_DIR$/routes/policyManagement/policyRegisters.js" />
-        <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
         <option value="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
         <option value="$PROJECT_DIR$/models/partnership/partnershipClaim.js" />
         <option value="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
         <option value="$PROJECT_DIR$/models/partnership/partnershipPolicy.js" />
         <option value="$PROJECT_DIR$/models/partnership/partnershipQuote.js" />
         <option value="$PROJECT_DIR$/models/partnership/partnership.js" />
-        <option value="$PROJECT_DIR$/config/default.json" />
-        <option value="$PROJECT_DIR$/config/test.json" />
         <option value="$PROJECT_DIR$/startup/db.js" />
         <option value="$PROJECT_DIR$/startup/routes.js" />
         <option value="$PROJECT_DIR$/startup/logging.js" />
         <option value="$PROJECT_DIR$/routes/partnership/partnership.js" />
         <option value="$PROJECT_DIR$/tests/unit/middleware/auth.js" />
         <option value="$PROJECT_DIR$/tests/unit/models/authUser.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/tests/integration/companyQuote/quotes.js" />
+        <option value="$PROJECT_DIR$/models/authorizedUser/authUser.js" />
         <option value="$PROJECT_DIR$/tests/unit/models/authorizedUser/authUser.test.js" />
+        <option value="$PROJECT_DIR$/config/default.json" />
+        <option value="$PROJECT_DIR$/config/test.json" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/tests/unit/authorizedUser/authUser.js" />
+        <option value="$PROJECT_DIR$/middleware/validateObjectId.js" />
+        <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
+        <option value="$PROJECT_DIR$/tests/integration/companyQuote/quotes.test.js" />
+        <option value="$PROJECT_DIR$/tests/unit/authorizedUser/authUser.test.js" />
+        <option value="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
       </list>
     </option>
   </component>
@@ -140,9 +152,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="43" />
+    <option name="y" value="44" />
     <option name="width" value="1404" />
     <option name="height" value="877" />
   </component>
@@ -182,49 +194,13 @@
             <path>
               <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="authorizedUser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="authorizedUser" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="makeClaim" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,15 +259,15 @@
       <workItem from="1538059914768" duration="9421000" />
       <workItem from="1538155907155" duration="1380000" />
       <workItem from="1538202987330" duration="10276000" />
-      <workItem from="1538214428504" duration="1127000" />
+      <workItem from="1538214428504" duration="8518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50031000" />
+    <option name="totallyTimeSpent" value="57422000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1404" height="877" extended-state="0" />
+    <frame x="37" y="23" width="1404" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21619667" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -325,36 +301,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/partnership/partnershipPolicy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/partnership/partnership.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/partnership/partnership.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/partnership/partnershipClaim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/partnership/partnershipQuote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -389,6 +335,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="57" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="36" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -417,6 +364,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -466,17 +414,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/makeClaim/makeClaims.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,6 +426,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="100" column="61" lean-forward="false" selection-start-line="100" selection-start-column="61" selection-end-line="100" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -498,6 +441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -509,18 +453,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/makeClaim/makeClaim.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-169">
           <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -537,13 +474,6 @@
         <state relative-caret-position="101">
           <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/companyQuote/quote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -567,27 +497,6 @@
         <state relative-caret-position="570">
           <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/custom-environment-variables.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -619,14 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startup/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -639,14 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/models/authorizedUser/authUser.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -667,26 +560,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/authorizedUser/authUser.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+        <state relative-caret-position="240">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/tests/unit/models/authorizedUser/authUser.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/authorizedUser/authUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/makeClaims.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="180">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/validateObjectId.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/companyQuote/quote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/custom-environment-variables.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/companyQuote/quotes.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/authorizedUser/authUser.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/makeClaim/makeClaims.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
           <folding />
         </state>
       </provider>

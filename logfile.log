@@ -55,3 +55,375 @@
 {"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:02:40.523Z"}
 {"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:07:18.108Z"}
 {"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:07:18.131Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:43:05.385Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:43:18.817Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:43:18.840Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:45:12.357Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:45:12.407Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:45:17.201Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:45:17.283Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:45:21.670Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:45:21.744Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:45:26.941Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:45:26.977Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:45:46.686Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:45:46.710Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:45:52.577Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:45:52.601Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:46:00.118Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:46:00.139Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:46:29.631Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:46:29.654Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:49:02.514Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:49:02.536Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:49:04.570Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:49:04.599Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:49:51.661Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:49:51.695Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:50:50.327Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:50:50.355Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:51:03.927Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:51:03.960Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:51:11.864Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:51:11.960Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:51:54.096Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:51:54.127Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:51:55.461Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:52:22.279Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:52:22.314Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:52:22.512Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:52:22.530Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:01.429Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:53:01.469Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:03.128Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:18.928Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:53:18.963Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:20.880Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:28.664Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:53:28.692Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:30.470Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:47.002Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:53:47.031Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:53:48.541Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:54:02.522Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:54:02.552Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:54:04.237Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:54:49.575Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:54:49.608Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:54:51.032Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:03.119Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:55:03.147Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:04.938Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:17.972Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:39.706Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:55:39.732Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:41.094Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:49.064Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:55:49.092Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:50.240Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:55:50.262Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:55:58.407Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:55:58.433Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:56:00.998Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:56:01.019Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T10:56:13.806Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T10:56:13.876Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T11:02:03.368Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T11:02:03.396Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:06:12.630Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:06:12.680Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:06:35.973Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:06:36.017Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:06:38.836Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:06:38.868Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:07:01.986Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:07:40.734Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:07:40.771Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:08:02.397Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:08:02.443Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:08:07.590Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:08:07.621Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:08:11.246Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:08:11.300Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:08:22.819Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:08:22.853Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:08:26.922Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:08:26.995Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:08:30.214Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:08:30.254Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:08:42.422Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:08:42.440Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:09:35.264Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:09:35.308Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:10:14.210Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:10:14.241Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:10:18.609Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:10:18.642Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:11:15.351Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:11:15.393Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:11:19.559Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:11:19.594Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:11:30.912Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:11:30.944Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:14:06.390Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:14:06.424Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:14:24.382Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:14:24.415Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:14:34.948Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:14:34.985Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:14:57.586Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:14:57.642Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:15:18.815Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:15:18.860Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:15:50.706Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:15:50.742Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:16:08.836Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:16:08.875Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:16:23.671Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:16:23.704Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:16:32.721Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:16:32.775Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:16:46.471Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:16:46.509Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:17:55.630Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:17:55.696Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:18:02.738Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:18:02.771Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:18:09.873Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:18:09.928Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:19:39.958Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:19:39.993Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:20:01.268Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:20:01.310Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:21:48.762Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:21:48.805Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:21:56.403Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:21:56.436Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:22:04.952Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:22:04.991Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:23:03.806Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:23:03.842Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:23:09.871Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:23:09.918Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:23:30.512Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:23:30.550Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:24:40.988Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:24:41.020Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:24:44.858Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:24:44.896Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:24:56.712Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:24:56.751Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:25:33.330Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:25:33.365Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:25:47.113Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:25:47.155Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:25:56.974Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:25:57.009Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:26:04.493Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:26:04.530Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:27:54.287Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:27:54.335Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:28:05.234Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:28:05.274Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:28:11.796Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:28:11.834Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:28:31.164Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:28:31.207Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:28:41.230Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:28:41.272Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:28:52.846Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:28:52.883Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:29:08.743Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:29:08.825Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:29:17.318Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:29:17.353Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:29:32.845Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:29:32.877Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:29:38.171Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:29:38.206Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:29:57.194Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:29:57.229Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:30:24.214Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:30:24.249Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:30:41.022Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:30:41.066Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:31:10.660Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:31:10.708Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:31:13.653Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:31:13.735Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:31:20.895Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:31:20.929Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:31:48.674Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:31:48.758Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:31:53.616Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:31:53.654Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:31:59.301Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:31:59.335Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:32:23.666Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:32:23.706Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:33:34.342Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:33:34.397Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T12:33:39.492Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T12:33:39.527Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:53:06.717Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:53:06.828Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:53:12.072Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:53:12.107Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:53:16.403Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:53:16.472Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:53:30.986Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:53:31.051Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:53:42.220Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:53:42.269Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:53:59.618Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:53:59.654Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:54:16.598Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:54:16.634Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:54:31.600Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:54:31.636Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:54:38.838Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:54:38.996Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:54:44.070Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:54:44.117Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:54:51.400Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:54:51.461Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:54:57.397Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:54:57.456Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:55:22.096Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:55:22.129Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:55:48.787Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:55:48.821Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:56:03.145Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:56:03.190Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:56:19.764Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:56:19.796Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:57:23.049Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:57:23.111Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:58:12.662Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:58:12.713Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:59:19.788Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:59:19.824Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:59:24.396Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:59:24.454Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:59:31.686Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:59:31.723Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T13:59:40.753Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T13:59:40.791Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:00:35.342Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:00:35.381Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:00:50.306Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:00:50.352Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:01:01.283Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:01:01.344Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:01:07.813Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:01:07.852Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:02:38.473Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:02:38.508Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:02:49.182Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:02:49.242Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:03:03.749Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:03:03.792Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:03:28.005Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:03:28.034Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:03:35.949Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:03:35.997Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:05:46.699Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:05:46.733Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:15:11.711Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:15:11.783Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:15:30.842Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:15:30.888Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:15:35.550Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:15:35.608Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:16:28.516Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:16:28.567Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:16:35.888Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:16:35.936Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:17:33.671Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:17:33.719Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:17:38.656Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:17:38.725Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:18:32.843Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:18:32.897Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:18:39.340Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:18:39.385Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:19:32.803Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:19:32.876Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:21:56.809Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:21:56.841Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:22:17.220Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:22:17.253Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:22:25.651Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:22:25.688Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:22:34.170Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:22:34.216Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:22:41.282Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:22:41.318Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:22:54.509Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:22:54.566Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:23:07.501Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:23:07.546Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:23:17.549Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:23:17.596Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:23:24.023Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:23:24.070Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:23:34.077Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:23:34.113Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:23:53.398Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:23:53.448Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:23:59.979Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:24:00.017Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:27:02.811Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:27:02.868Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:27:12.129Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:27:12.164Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:27:38.963Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:27:39.009Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:27:56.905Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:27:56.950Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:29:25.361Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:29:25.393Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:42:49.455Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:42:49.486Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:43:00.079Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:43:00.114Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:43:04.518Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:43:04.560Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:44:57.160Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:44:57.218Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:47:47.996Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:47:48.038Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:47:52.850Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:47:52.904Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:48:45.010Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:48:45.052Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:49:16.083Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:49:16.123Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:49:24.121Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:49:24.173Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:49:32.167Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:49:32.212Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:49:53.645Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:49:53.687Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:50:00.192Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:50:00.235Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:50:06.001Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:50:06.046Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:50:23.750Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:50:23.795Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:50:37.355Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:50:37.401Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:50:48.895Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:50:48.940Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:51:00.555Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:51:00.603Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:51:08.437Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:51:08.517Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:51:13.133Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:51:13.182Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:51:22.742Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:51:22.786Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:51:41.136Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:51:41.215Z"}
+{"level":"info","message":"server running on port 3000....","timestamp":"2018-09-29T14:51:54.763Z"}
+{"level":"info","message":"MONGODB connected to mongodb://localhost/senangpks....","timestamp":"2018-09-29T14:51:54.812Z"}

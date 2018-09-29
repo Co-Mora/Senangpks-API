@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest --watchAll -verbose"
+    "test": "jest --watchAll --verbose"
   },
   "keywords": [],
   "author": "",

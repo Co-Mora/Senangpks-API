@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
 });
 
 
-router.post('/verify', async (req, res) => {
+router.post('/login/verify', async (req, res) => {
 
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -41,6 +41,39 @@ router.post('/verify', async (req, res) => {
 
 
 });
+
+
+router.post('/password/reset', async (req, res) => {
+
+    let { error } = claimValidation(req.body);
+    if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
+
+
+    let makeClaim = await MakeClaim.find({companyNo: req.body.companyNo});
+    if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}});
+
+    let salt = await bcrypt.genSalt(10);
+    req.body.password = await bcrypt.hash(req.body.password, salt);
+
+    makeClaim = await MakeClaim.update({companyNo: req.body.companyNo}, {
+        companyNo: makeClaim.companyNo,
+        password: req.body.password,
+        incident: makeClaim.incident,
+        claimCost: makeClaim.claimCost,
+        describeLos:makeClaim.describeLos,
+        incidentDate: makeClaim.incidentDate,
+        isDataProtected: makeClaim.isDataProtected,
+        fullName: makeClaim.fullName,
+        icNumber: makeClaim.icNumber,
+    }, {new: true});
+
+
+    res.send({result: {statusCode: 200, newClaim: makeClaim}});
+
+
+});
+
+
 
 router.post('/', auth, async (req, res) => {
 

@@ -3,9 +3,10 @@ const router = express.Router();
 const _ = require('lodash');
 const auth = require('../../middleware/auth');
 const admin = require('../../middleware/admin');
-
 const {Quote, quoteValidation } = require('../../models/companyQuote/quote');
 const {MakeClaim} = require('../../models/makeClaim/makeClaim');
+
+const validateObjectId = require('../../middleware/validateObjectId');
 
 router.get('/', async (req, res) => {
     const quotes  = await Quote.find().select(['-_id', '-__v']).sort('industryName');
@@ -15,6 +16,7 @@ router.get('/', async (req, res) => {
 
 
 router.get('/:id', async (req, res) => {
+
 
     const quotes = await Quote.findOne({companyNumber: req.params.id}).select(['-_id', '-__v']).sort('industryName');
     if(!quotes) return res.status(404).send({result: {statusCode: 404}});
@@ -92,7 +94,7 @@ router.put('/update/:id', [auth, admin], async (req, res) => {
 })
 
 
-router.delete('/:id', [auth, admin], async(req, res) => {
+router.delete('/:id', [auth, admin, validateObjectId], async(req, res) => {
     
     const quote = await Quote.remove({companyID: req.params.id})
     if(!quote) return res.status(404).send({result: {statusCode: 404}});

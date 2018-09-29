@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const {PolicyRegister, registerValidation} = require('../../models/policyManagement/policyRegister')
 const _ = require('lodash');
+const auth = require('../../middleware/auth');
+const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
 
@@ -35,7 +37,7 @@ router.post('/setUser', async (req, res) => {
 
 });
 
-router.put('/updateUser/:id', async (req, res) => {
+router.put('/updateUser/:id', [auth, admin], async (req, res) => {
 
 
     const {error} = registerValidation(req.body);
@@ -57,7 +59,7 @@ router.put('/updateUser/:id', async (req, res) => {
 });
 
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', [auth, admin], async (req, res) => {
 
     const registerUser = await PolicyRegister.remove({companyID: req.params.id});
 

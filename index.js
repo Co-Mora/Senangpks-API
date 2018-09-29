@@ -1,35 +1,17 @@
-const Joi = require('joi');
-Joi.objectId = require('joi-objectid')(Joi);
+const express = require('express');
+const winston = require('winston');
+const app = express();
 
-const epxress = require('express');
-const app = epxress();
-const helmet = require('helmet');
-const quotes = require('./routes/companyQuote/quotes');
-
-const registerPolicies = require('./routes/policyManagement/policyRegisters');
-const makeClaims = require('./routes/makeClaim/makeClaims');
-const policyLogins = require('./routes/policyManagement/policyLogins');
-const authUsers = require('./routes/authorizedUser/authUsers');
-
-const mongoose = require('mongoose');
-
-
-mongoose.connect('mongodb://localhost/senangpks')
-  .then(() => console.log('Connected to MongoDB...'))
-  .catch(err => console.error('Could not connect to MongoDB...', err));
-
-app.use(helmet());
-app.use(epxress.json());
-app.use(epxress.urlencoded({extended: true}));
-app.use('/api/v1/quotes', quotes);
-app.use('/api/v1/registerPolicy', registerPolicies);
-app.use('/api/v1/makeClaim', makeClaims);
-app.use('/api/v1/loginPolicy', policyLogins);
-app.use('/api/v1/auth', authUsers);
+require('./startup/routes')(app);
+require('./startup/logging')();
+require('./startup/db')();
 
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-    console.log(`server running on port ${port}....`);
+const server = app.listen(port, () => {
+    winston.info(`server running on port ${port}....`);
 });
+
+
+module.exports = server;

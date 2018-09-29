@@ -75,7 +75,6 @@ const claimValidation = (claim) => {
     const schema = {
 
         companyNo: Joi.string().min(5).max(255).required(),
-        partnerID: Joi.objectId(),
         incident: Joi.string().min(5).max(255).required(),
         claimCost: Joi.string().min(5).max(255).required(),
         describeLos: Joi.string().min(5).max(255).required(),

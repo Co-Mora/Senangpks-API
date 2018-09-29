@@ -3,6 +3,8 @@ const router = express.Router();
 const {claimValidation, MakeClaim} = require('../../models/makeClaim/makeClaim');
 const {Quote} = require('../../models/companyQuote/quote');
 const bcrypt = require('bcrypt');
+const auth = require('../../middleware/auth');
+const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
 
@@ -30,17 +32,17 @@ router.post('/verify', async (req, res) => {
 
 
     let makeClaim = await MakeClaim.find({companyNo: req.body.companyNo});
-    if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}})
+    if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}});
 
     let validPassword = await  bcrypt.compare(req.body.password, makeClaim.password);
-    if(!validPassword) return res.status(404).send({result: {statusCode: 404, error: "INVALID_PASSWORD"}})
+    if(!validPassword) return res.status(404).send({result: {statusCode: 404, error: "INVALID_PASSWORD"}});
 
     res.send({result: {statusCode: 200, message: true}});
 
 
 });
 
-router.post('/setClaim', async (req, res) => {
+router.post('/', auth, async (req, res) => {
 
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -93,7 +95,7 @@ router.post('/setClaim', async (req, res) => {
 
 
 
-router.put('/updateClaim/:id', async(req, res) => {
+router.put('/update/:id', [auth, admin], async(req, res) => {
 
 
     const { error } = claimValidation(req.body);
@@ -123,12 +125,12 @@ router.put('/updateClaim/:id', async(req, res) => {
 });
 
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', [auth, admin], async (req, res) => {
 
 
     const makeClaim = await MakeClaim.remove({claimID: req.params.id});
 
-    if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID claimID"}})
+    if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID claimID"}});
 
     res.send({result: makeClaim});
 

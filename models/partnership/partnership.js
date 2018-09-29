@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const {PartnerQuote} = require('./partnershipQuote');
+const {partnerQuoteSchema} = require('./partnershipQuote');
+const {partnershipClaimSchema} = require('./partnershipClaim');
+const {partnershipPolicySchema} = require('./partnershipPolicy');
 
 
 const partnershipSchema = new mongoose.Schema({
@@ -43,7 +45,15 @@ const partnershipSchema = new mongoose.Schema({
         minlength: 8,
         maxlength: 255
     },
-    partnershipCustomers: [PartnerQuote]
+    partnerQuote: {
+        type: [partnerQuoteSchema]
+    },
+    partnerClaim: {
+        type: [partnershipClaimSchema]
+    },
+    partnerRegisterPolicy: {
+        type: [partnershipPolicySchema]
+    }
 
 });
 

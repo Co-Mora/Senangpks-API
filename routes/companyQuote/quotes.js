@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const _ = require('lodash');
+const auth = require('../../middleware/auth');
+const admin = require('../../middleware/admin');
 
 const {Quote, quoteValidation } = require('../../models/companyQuote/quote');
 const {MakeClaim} = require('../../models/makeClaim/makeClaim');
@@ -23,7 +25,7 @@ router.get('/:id', async (req, res) => {
     res.send({result: {quotes}});
 });
 
-router.post('/setQuote', async (req, res) => {
+router.post('/set', auth, async (req, res) => {
 
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -59,7 +61,7 @@ router.post('/setQuote', async (req, res) => {
 });
 
 
-router.put('/updateQuote/:id', async (req, res) => {
+router.put('/update/:id', [auth, admin], async (req, res) => {
 
     const quote = await Quote.update({companyID: req.params.id}, {
         industryName: req.body.industryName,
@@ -90,7 +92,7 @@ router.put('/updateQuote/:id', async (req, res) => {
 })
 
 
-router.delete('/:id', async(req, res) => {
+router.delete('/:id', [auth, admin], async(req, res) => {
     
     const quote = await Quote.remove({companyID: req.params.id})
     if(!quote) return res.status(404).send({result: {statusCode: 404}});

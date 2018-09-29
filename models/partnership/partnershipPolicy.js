@@ -10,6 +10,11 @@ const partnershipPolicySchema = new mongoose.Schema({
         required: true,
         auto: true,
     },
+    partnerID: {
+        type: String,
+        required: true,
+        trim: true,
+    },
     companyName: {
         type: String,
         trim: true,
@@ -48,7 +53,7 @@ const  partnerPolicyValidation = (register) => {
     const schema = {
         companyName: Joi.string().min(2).max(255).required(),
         phoneNo: Joi.string().min(10).max(20).required(),
-        email: Joi.string().min(5).max(255).email().required()
+        email: Joi.string().min(5).max(255).email().required(),
         uploadFile: Joi.string().required()
     };
 

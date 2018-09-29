@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
-const {partnershipClaimSchema} = require('./partnershipClaim');
-const {partnershipPolicySchema} = require('./partnershipPolicy');
 
 const partnerQuoteSchema = new mongoose.Schema({
 
@@ -138,12 +136,7 @@ const partnerQuoteSchema = new mongoose.Schema({
         trim: true,
         required: true
     },
-    partnerClaim: {
-        type: [partnershipClaimSchema]
-    },
-    partnerRegisterPolicy: {
-        type: [partnershipPolicySchema]
-    }
+
 
 
 });
@@ -154,7 +147,6 @@ const PartnerQuote = mongoose.model('PartnerQuote', partnerQuoteSchema);
 const quoteValidation = (quote) => {
 
     const schema = {
-        partnerID: Joi.objectId().required(),
         industryName: Joi.string().min(2).max(255).required(),
         businessType: Joi.string().min(2).max(255).required(),
         specifyIndustry: Joi.string().min(2).max(255).required(),

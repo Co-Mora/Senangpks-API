@@ -3,6 +3,8 @@ const router = express.Router();
 const {PolicyLogin, policyLoginValidation} = require('../../models/policyManagement/policyLogin');
 const {Quote} = require('../../models/companyQuote/quote');
 const bcrypt = require('bcrypt');
+const auth = require('../../middleware/auth');
+const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
 
@@ -91,7 +93,7 @@ router.post('/setLoginPolicy', async (req, res) => {
 
 
 
-router.put('/updatePolicyLogin/:id', async(req, res) => {
+router.put('/updatePolicyLogin/:id', [auth, admin], async(req, res) => {
 
 
     const { error } = policyLoginValidation(req.body);
@@ -114,7 +116,7 @@ router.put('/updatePolicyLogin/:id', async(req, res) => {
 });
 
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', [auth, admin], async (req, res) => {
 
 
     const policyLogin = await PolicyLogin.remove({loginID: req.params.id});

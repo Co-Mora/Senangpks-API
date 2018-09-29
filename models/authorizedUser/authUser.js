@@ -1,9 +1,10 @@
 const Joi = require('joi');
 const mongoose  = require('mongoose');
+const jwt = require('jsonwebtoken');
+const config = require('config');
 
 
-
-const AuthUser = mongoose.model('AuthUser', new mongoose.Schema({
+const authUserSchema = new mongoose.Schema({
 
     partnerID: {
         type: mongoose.Schema.Types.ObjectId,
@@ -41,6 +42,10 @@ const AuthUser = mongoose.model('AuthUser', new mongoose.Schema({
         minlength: 8,
         maxlength: 255
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
     optional: {
         type: String,
         trim: true,
@@ -48,7 +53,16 @@ const AuthUser = mongoose.model('AuthUser', new mongoose.Schema({
         maxlength: 255
     }
 
-}));
+});
+
+
+authUserSchema.methods.generateAuthToken = function() {
+
+    const token = jwt.sign({partnerID: this.partnerID, isAdmin: this.isAdmin}, config.get('jwtPrivateKey'));
+    return token;
+};
+
+const AuthUser = mongoose.model('AuthUser', authUserSchema);
 
 
 

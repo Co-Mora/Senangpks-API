@@ -2,7 +2,8 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const router = express.Router();
 const {Admin, adminValidation} = require('../../models/CRMAdmin/admin');
-
+const auth = require('../../middleware/auth');
+const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
 
@@ -39,7 +40,7 @@ router.post('/user/verify', async (req, res) => {
 
 
 
-router.post('/addUser', async (req, res) => {
+router.post('/add', async (req, res) => {
 
     let {error} = adminValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}})
@@ -61,17 +62,30 @@ router.post('/addUser', async (req, res) => {
 });
 
 
-router.put('/updateUser', async (req, res) => {
+router.put('/update/:id', [auth, admin], async (req, res) => {
 
     let {error} = adminValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}})
 
+    const salt = await bcrypt.genSalt(10);
+    req.body.password = await bcrypt.hash(req.body.password, salt);
+
+
+    let admin = await  Admin.update({adminID: req.params.id}, {
+        username: req.body.username,
+        password: req.body.password,
+    }, {new: true});
+
+
+    res.send({result: {statusCode: 200, message: "UPDATED", newUser: admin}});
+
+
 });
 
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', [auth, admin], async (req, res) => {
 
-    const admin = await Admin.findByIdAndRemove(req.params.id);
+    const admin = await Admin.remove({adminID: req.params.id});
 
     if(!admin) return res.status(404).send({result: {statusCode: 404, error: "INVALID_ID"}})
 

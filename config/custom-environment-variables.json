@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "se_jwtPrivateKey"
+  "jwtPrivateKey": "se_jwtPrivateKey",
+  "db": "se_db"
 }

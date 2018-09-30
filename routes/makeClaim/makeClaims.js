@@ -75,7 +75,7 @@ router.post('/password/reset', async (req, res) => {
 
 
 
-router.post('/', auth, async (req, res) => {
+router.post('/', async (req, res) => {
 
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});

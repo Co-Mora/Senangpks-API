@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {
     res.send({result: {quotes}});
 });
 
-router.post('/set', auth, async (req, res) => {
+router.post('/set', async (req, res) => {
 
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -96,7 +96,7 @@ router.put('/update/:id', [auth, admin], async (req, res) => {
 
 router.delete('/:id', [auth, admin, validateObjectId], async(req, res) => {
     
-    const quote = await Quote.remove({companyID: req.params.id})
+    const quote = await Quote.remove({companyID: req.params.id});
     if(!quote) return res.status(404).send({result: {statusCode: 404}});
 
     res.send({result: quote});

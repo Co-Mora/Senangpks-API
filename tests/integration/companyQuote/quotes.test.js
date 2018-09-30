@@ -70,7 +70,7 @@ describe('/api/v1/quotes', () => {
                 basicPremium: "hello Industry",
                 grandTotalAmount: "hello Industry",
                 coverNoteFile: "hello Industry",
-            })
+            });
 
             await quote.save();
 

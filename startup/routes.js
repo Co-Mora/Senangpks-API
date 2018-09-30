@@ -1,6 +1,5 @@
 
 const express = require('express');
-const helmet = require('helmet');
 
 
 const quotes = require('../routes/companyQuote/quotes');

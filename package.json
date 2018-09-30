@@ -7,13 +7,18 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest --watchAll --verbose"
+    "test": "jest --watchAll --verbose",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.9.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.1",
+    "compression": "^1.7.3",
     "config": "^2.0.1",
     "debug": "^4.0.1",
     "express": "^4.16.3",

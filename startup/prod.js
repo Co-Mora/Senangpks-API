@@ -1,4 +1,4 @@
-const compression = require('compression')
+const compression = require('compression');
 const helmet = require('helmet');
 
 

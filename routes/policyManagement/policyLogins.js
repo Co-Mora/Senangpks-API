@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
 });
 
 
-router.post('/login/verify', async (req, res) => {
+router.post('/verify', async (req, res) => {
 
     let { error } = policyLoginValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});

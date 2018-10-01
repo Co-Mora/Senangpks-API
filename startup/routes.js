@@ -8,6 +8,7 @@ const makeClaims = require('../routes/makeClaim/makeClaims');
 const policyLogins = require('../routes/policyManagement/policyLogins');
 const authUsers = require('../routes/authorizedUser/authUsers');
 const partnership = require('../routes/partnership/partnership');
+const admins = require('../routes/CRMAdmin/admin');
 
 
 module.exports = function (app) {
@@ -19,5 +20,6 @@ module.exports = function (app) {
     app.use('/api/v1/login/policy', policyLogins);
     app.use('/api/v1/auth', authUsers);
     app.use('/api/v1/partners', partnership);
+    app.use('/api/v1/admin', admins);
 
 };

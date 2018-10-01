@@ -14,9 +14,9 @@ module.exports = function (app) {
     app.use(express.json());
     app.use(express.urlencoded({extended: true}));
     app.use('/api/v1/quotes', quotes);
-    app.use('/api/v1/registerPolicy', registerPolicies);
-    app.use('/api/v1/makeClaim', makeClaims);
-    app.use('/api/v1/loginPolicy', policyLogins);
+    app.use('/api/v1/register/policy', registerPolicies);
+    app.use('/api/v1/claim', makeClaims);
+    app.use('/api/v1/login/policy', policyLogins);
     app.use('/api/v1/auth', authUsers);
     app.use('/api/v1/partners', partnership);
 

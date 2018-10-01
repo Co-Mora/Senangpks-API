@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
 });
 
 
-router.post('/setUser', async (req, res) => {
+router.post('/set', async (req, res) => {
 
     const { error } = registerValidation(req.body);
 
@@ -37,7 +37,7 @@ router.post('/setUser', async (req, res) => {
 
 });
 
-router.put('/updateUser/:id', [auth, admin], async (req, res) => {
+router.put('/update/:id', [auth, admin], async (req, res) => {
 
 
     const {error} = registerValidation(req.body);

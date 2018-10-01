@@ -42,7 +42,7 @@ router.post('/login/verify', async (req, res) => {
 
 
 
-router.post('/setLoginPolicy', async (req, res) => {
+router.post('/set', async (req, res) => {
 
     let { error } = policyLoginValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -93,7 +93,7 @@ router.post('/setLoginPolicy', async (req, res) => {
 
 
 
-router.put('/updatePolicyLogin/:id', [auth, admin], async(req, res) => {
+router.put('/update/:id', [auth, admin], async(req, res) => {
 
 
     const { error } = policyLoginValidation(req.body);

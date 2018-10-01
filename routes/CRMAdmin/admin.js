@@ -91,3 +91,6 @@ router.delete('/:id', [auth, admin], async (req, res) => {
 
     res.send({result: {statusCode: 200, message: "OK"}});
 });
+
+
+module.exports = router;

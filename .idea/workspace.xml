@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4979e71-d21a-43cd-968e-83e6be9e97e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" afterPath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
+      <change beforePath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" afterPath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +19,18 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+            <state relative-caret-position="150">
+              <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/CRMAdmin/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="95" column="24" lean-forward="false" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -29,18 +39,8 @@
       <file leaf-file-name="partnership.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/partnership/partnership.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authUsers.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/authorizedUser/authUsers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="496">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,7 +92,6 @@
         <option value="$PROJECT_DIR$/middleware/async.js" />
         <option value="$PROJECT_DIR$/middleware/admin.js" />
         <option value="$PROJECT_DIR$/middleware/error.js" />
-        <option value="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
         <option value="$PROJECT_DIR$/models/partnership/partnershipClaim.js" />
         <option value="$PROJECT_DIR$/models/partnership/partnershipPolicy.js" />
         <option value="$PROJECT_DIR$/models/partnership/partnershipQuote.js" />
@@ -120,8 +119,9 @@
         <option value="$PROJECT_DIR$/config/custom-environment-variables.json" />
         <option value="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
         <option value="$PROJECT_DIR$/routes/policyManagement/policyRegisters.js" />
-        <option value="$PROJECT_DIR$/startup/routes.js" />
         <option value="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
+        <option value="$PROJECT_DIR$/startup/routes.js" />
+        <option value="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
       </list>
     </option>
   </component>
@@ -194,6 +194,12 @@
             <path>
               <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="CRMAdmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -256,12 +262,12 @@
       <workItem from="1538214428504" duration="8518000" />
       <workItem from="1538320362618" duration="2282000" />
       <workItem from="1538328108460" duration="137000" />
-      <workItem from="1538375660259" duration="4422000" />
+      <workItem from="1538375660259" duration="5201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64263000" />
+    <option name="totallyTimeSpent" value="65042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -615,34 +621,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/CRMAdmin/admin.js">
+    <entry file="file://$PROJECT_DIR$/routes/authorizedUser/authUsers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        <state relative-caret-position="285">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/partnership/partnership.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="496">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/authorizedUser/authUsers.js">
+    <entry file="file://$PROJECT_DIR$/startup/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/CRMAdmin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="95" column="24" lean-forward="false" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
           <folding />
         </state>
       </provider>

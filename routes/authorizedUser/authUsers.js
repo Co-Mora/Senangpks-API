@@ -3,6 +3,7 @@ const router = express.Router();
 const _ = require('lodash');
 
 const auth = require('../../middleware/auth');
+const admin = require('../../middleware/admin');
 
 const {AuthUser, authValidation} = require('../../models/authorizedUser/authUser');
 
@@ -11,7 +12,7 @@ router.get('/me', auth, async (req, res) => {
 
 
     const authUser = await AuthUser.findOne(req.authUser._id).select(['-_id', '-__v']);
-    res.send(authUser)
+    res.send({result: authUser});
 
 });
 
@@ -23,7 +24,7 @@ router.post('/', async (req, res) => {
     let authUser = await AuthUser.findOne({email: req.body.email});
     if(authUser) return res.status(400).send({result: {statusCode: 400, errors: "Partner Already Exist "}});
 
-    authUser = new AuthUser(_.pick(req.body, ['companyName', 'email', 'phoneNo', 'websiteUrl', 'optional']))
+    authUser = new AuthUser(_.pick(req.body, ['companyName', 'email', 'phoneNo', 'websiteUrl', 'optional']));
 
     await authUser.save();
 
@@ -34,7 +35,7 @@ router.post('/', async (req, res) => {
 });
 
 
-router.put('/:id', auth, async (req, res) => {
+router.put('/:id', [auth, admin], async (req, res) => {
 
     const { error } = authValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});

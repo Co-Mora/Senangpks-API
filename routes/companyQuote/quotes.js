@@ -9,6 +9,10 @@ const {MakeClaim} = require('../../models/makeClaim/makeClaim');
 const validateObjectId = require('../../middleware/validateObjectId');
 
 router.get('/', async (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
     const quotes  = await Quote.find().select(['-_id', '-__v']).sort('industryName');
     res.send({result: {quotes , count: quotes.length}});
 });

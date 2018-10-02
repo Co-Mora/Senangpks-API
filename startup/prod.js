@@ -6,4 +6,6 @@ module.exports = function (app) {
     app.use(helmet());
     app.use(compression());
     app.use(cors({credentials: true, origin: true}));
+    app.options('*', cors());
+
 };

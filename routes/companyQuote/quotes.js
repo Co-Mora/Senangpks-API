@@ -21,6 +21,9 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
 
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     const quotes = await Quote.findOne({companyNumber: req.params.id}).select(['-_id', '-__v']).sort('industryName');
     if(!quotes) return res.status(404).send({result: {statusCode: 404}});
@@ -32,6 +35,10 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/create/first', async (req, res) => {
+
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -69,6 +76,10 @@ router.post('/create/first', async (req, res) => {
 
 router.post('/create/second', async (req, res) => {
 
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
@@ -101,6 +112,10 @@ router.post('/create/second', async (req, res) => {
 });
 
 router.post('/create/third', async (req, res) => {
+
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -144,6 +159,10 @@ router.post('/create/third', async (req, res) => {
 
 router.put('/update/:id', [auth, admin], async (req, res) => {
 
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
     const quote = await Quote.update({companyID: req.params.id}, {
         industryName: req.body.industryName,
         businessType: req.body.businessType,
@@ -170,17 +189,22 @@ router.put('/update/:id', [auth, admin], async (req, res) => {
 
     res.send({result: {statusCode: 200, message: "OK"}});
 
-})
+});
 
 
 router.delete('/:id', [auth, admin, validateObjectId], async(req, res) => {
-    
+
+
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
     const quote = await Quote.remove({companyID: req.params.id});
     if(!quote) return res.status(404).send({result: {statusCode: 404}});
 
     res.send({result: quote});
 
-})
+});
 
 
 module.exports = router;

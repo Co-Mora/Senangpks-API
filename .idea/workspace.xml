@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4979e71-d21a-43cd-968e-83e6be9e97e9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/cors.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change beforePath="$PROJECT_DIR$/startup/prod.js" afterPath="$PROJECT_DIR$/startup/prod.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prod.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prod.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/startup/prod.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -182,9 +179,9 @@
         <option value="$PROJECT_DIR$/routes/partnership/partnership.js" />
         <option value="$PROJECT_DIR$/models/companyQuote/quote.js" />
         <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
-        <option value="$PROJECT_DIR$/startup/prod.js" />
         <option value="$PROJECT_DIR$/middleware/cors.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/startup/prod.js" />
       </list>
     </option>
   </component>
@@ -360,12 +357,12 @@
       <workItem from="1538472222250" duration="1985000" />
       <workItem from="1538474411616" duration="30000" />
       <workItem from="1538474458759" duration="2055000" />
-      <workItem from="1538492662563" duration="780000" />
+      <workItem from="1538492662563" duration="844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70895000" />
+    <option name="totallyTimeSpent" value="70959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -714,14 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -742,6 +731,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

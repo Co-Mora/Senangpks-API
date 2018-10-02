@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c4979e71-d21a-43cd-968e-83e6be9e97e9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/logfile.log" afterPath="$PROJECT_DIR$/logfile.log" />
-      <change beforePath="$PROJECT_DIR$/models/companyQuote/quote.js" afterPath="$PROJECT_DIR$/models/companyQuote/quote.js" />
-      <change beforePath="$PROJECT_DIR$/routes/companyQuote/quotes.js" afterPath="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
-      <change beforePath="$PROJECT_DIR$/routes/partnership/partnership.js" afterPath="$PROJECT_DIR$/routes/partnership/partnership.js" />
-      <change beforePath="$PROJECT_DIR$/uncaughtExceptions.log" afterPath="$PROJECT_DIR$/uncaughtExceptions.log" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/startup/prod.js" afterPath="$PROJECT_DIR$/startup/prod.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="quotes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quotes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1213">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="328">
+              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/startup/prod.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -35,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/uncaughtExceptions.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
             <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
             </state>
           </provider>
         </entry>
@@ -43,7 +50,7 @@
       <file leaf-file-name="makeClaims.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/makeClaim/makeClaims.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
+            <state relative-caret-position="1245">
               <caret line="83" column="104" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="83" selection-end-column="104" />
               <folding />
             </state>
@@ -136,7 +143,6 @@
         <option value="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/tests/integration/companyQuote/quotes.test.js" />
-        <option value="$PROJECT_DIR$/startup/prod.js" />
         <option value="$PROJECT_DIR$/config/custom-environment-variables.json" />
         <option value="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
         <option value="$PROJECT_DIR$/routes/policyManagement/policyRegisters.js" />
@@ -146,6 +152,7 @@
         <option value="$PROJECT_DIR$/routes/partnership/partnership.js" />
         <option value="$PROJECT_DIR$/models/companyQuote/quote.js" />
         <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
+        <option value="$PROJECT_DIR$/startup/prod.js" />
       </list>
     </option>
   </component>
@@ -166,11 +173,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2192" />
-    <option name="y" value="180" />
-    <option name="width" value="1808" />
-    <option name="height" value="1260" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="34" />
+    <option name="y" value="23" />
+    <option name="width" value="1406" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -187,6 +194,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -260,7 +268,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,12 +327,13 @@
       <workItem from="1538412935792" duration="131000" />
       <workItem from="1538472222250" duration="1985000" />
       <workItem from="1538474411616" duration="30000" />
-      <workItem from="1538474458759" duration="1407000" />
+      <workItem from="1538474458759" duration="2055000" />
+      <workItem from="1538492662563" duration="78000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69467000" />
+    <option name="totallyTimeSpent" value="70193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,10 +345,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2192" y="180" width="1808" height="1260" extended-state="0" />
+    <frame x="34" y="23" width="1406" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16955791" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16895308" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -515,12 +523,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logfile.log">
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
@@ -592,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -661,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/makeClaim/makeClaims.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
+        <state relative-caret-position="1245">
           <caret line="83" column="104" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="83" selection-end-column="104" />
           <folding />
         </state>
@@ -683,7 +683,7 @@
     <entry file="file://$PROJECT_DIR$/uncaughtExceptions.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -697,8 +697,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1213">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="328">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>

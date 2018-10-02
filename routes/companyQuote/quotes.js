@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {
     res.send({result: {quotes}});
 });
 
-router.post('/set', async (req, res) => {
+router.post('/create/first', async (req, res) => {
 
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -61,6 +61,81 @@ router.post('/set', async (req, res) => {
 
 
 });
+
+
+router.post('/create/second', async (req, res) => {
+
+    const { error } = quoteValidation(req.body);
+    if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
+
+    const quote = await Quote.findOne({companyNumber: req.body.companyNumber});
+    if(!quote) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}})
+
+    await Quote.update({companyNumber: req.body.companyNumber}, {
+
+        industryName: quote.industryName,
+        businessType: quote.businessType,
+        specifyIndustry: quote.specifyIndustry,
+        companyName: quote.companyName,
+        companyNumber: quote.companyNumber,
+        email: quote.email,
+        phoneNo: quote.phoneNo,
+        address: quote.address,
+        typeOfBusiness:quote.typeOfBusiness,
+        postalCode: quote.postalCode,
+        building: req.body.building,
+        machineryEquipments: req.body.machineryEquipments,
+        furnitureFittings: req.body.furnitureFittings,
+        miscellanous: req.body.miscellanous,
+        uploadFile: req.body.uploadFile,
+
+    }, {new: true});
+
+    res.send({result: quote})
+
+
+});
+
+router.post('/create/third', async (req, res) => {
+
+    const { error } = quoteValidation(req.body);
+    if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
+
+    const quote = await Quote.findOne({companyNumber: req.body.companyNumber});
+    if(!quote) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}})
+
+    await Quote.update({companyNumber: req.body.companyNumber}, {
+
+        industryName: quote.industryName,
+        businessType: quote.businessType,
+        specifyIndustry: quote.specifyIndustry,
+        companyName: quote.companyName,
+        companyNumber: quote.companyNumber,
+        email: quote.email,
+        phoneNo: quote.phoneNo,
+        address: quote.address,
+        typeOfBusiness:quote.typeOfBusiness,
+        postalCode: quote.postalCode,
+        building: quote.building,
+        machineryEquipments: quote.machineryEquipments,
+        furnitureFittings: quote.furnitureFittings,
+        miscellanous:quote.miscellanous,
+        uploadFile: quote.uploadFile,
+        additionalCoverage: req.body.additionalCoverage,
+        basicPremium: req.body.basicPremium,
+        grandTotalAmount: req.body.grandTotalAmount,
+        coverNoteFile: req.body.coverNoteFile
+
+    }, {new: true});
+
+    res.send({result: quote})
+
+
+});
+
+
+
+
 
 
 router.put('/update/:id', [auth, admin], async (req, res) => {

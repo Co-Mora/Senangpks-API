@@ -14,7 +14,7 @@ router.get('/:id', async (req, res) => {
     const partnership = await Partnership.find({partnerID: req.params.id}).select(['-_id', '-__v']).sort('companyName');
     if(!partnership) return res.status(404).send({result: {statusCode: 404, error: "Not Found"}});
 
-    const partnerQuote = await PartnerQuote.find({partnerID: req.params.id}).select(['-_id', '-__v'])
+    const partnerQuote = await PartnerQuote.find({partnerID: req.params.id}).select(['-_id', '-__v']);
     if(!partnerQuote) return res.status(404).send({result: {statusCode: 404, error: "Not Found"}});
 
     const partnershipClaim = await PartnershipClaim.find({partnerID: req.params.id}).select(['-_id', '-__v'])

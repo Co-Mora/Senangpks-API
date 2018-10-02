@@ -9,11 +9,12 @@ const {MakeClaim} = require('../../models/makeClaim/makeClaim');
 const validateObjectId = require('../../middleware/validateObjectId');
 
 router.get('/', async (req, res) => {
+
+
+    const quotes  = await Quote.find().select(['-_id', '-__v']).sort('industryName');
     res.header("Access-Control-Allow-Origin", "*");
     res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-
-    const quotes  = await Quote.find().select(['-_id', '-__v']).sort('industryName');
     res.send({result: {quotes , count: quotes.length}});
 });
 
@@ -36,9 +37,6 @@ router.get('/:id', async (req, res) => {
 
 router.post('/create/first', async (req, res) => {
 
-    // res.header("Access-Control-Allow-Origin", "*");
-    // res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
-    // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -68,7 +66,13 @@ router.post('/create/first', async (req, res) => {
         ]));
 
         await quote.save();
-        res.send({result: quote})
+        
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        res.send({result: quote});
+
+
 
 
 });

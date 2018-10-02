@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4979e71-d21a-43cd-968e-83e6be9e97e9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" afterPath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
+      <change beforePath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" afterPath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
       <change beforePath="$PROJECT_DIR$/routes/companyQuote/quotes.js" afterPath="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
+      <change beforePath="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" afterPath="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
+      <change beforePath="$PROJECT_DIR$/routes/partnership/partnership.js" afterPath="$PROJECT_DIR$/routes/partnership/partnership.js" />
+      <change beforePath="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" afterPath="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
+      <change beforePath="$PROJECT_DIR$/startup/prod.js" afterPath="$PROJECT_DIR$/startup/prod.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,41 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="quotes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quotes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+            <state relative-caret-position="330">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prod.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/prod.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -124,15 +110,15 @@
         <option value="$PROJECT_DIR$/routes/policyManagement/policyRegisters.js" />
         <option value="$PROJECT_DIR$/startup/routes.js" />
         <option value="$PROJECT_DIR$/models/companyQuote/quote.js" />
+        <option value="$PROJECT_DIR$/middleware/cors.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
+        <option value="$PROJECT_DIR$/startup/prod.js" />
         <option value="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
         <option value="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
         <option value="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
         <option value="$PROJECT_DIR$/routes/partnership/partnership.js" />
         <option value="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
-        <option value="$PROJECT_DIR$/middleware/cors.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/startup/prod.js" />
-        <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
       </list>
     </option>
   </component>
@@ -187,11 +173,6 @@
               <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senangpks-api" type="462c0819:PsiDirectoryNode" />
-              <item name="middleware" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="senangpks-api" type="b2602c69:ProjectViewProjectNode" />
@@ -303,12 +284,12 @@
       <workItem from="1538472222250" duration="1985000" />
       <workItem from="1538474411616" duration="30000" />
       <workItem from="1538474458759" duration="2055000" />
-      <workItem from="1538492662563" duration="3956000" />
+      <workItem from="1538492662563" duration="4268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74071000" />
+    <option name="totallyTimeSpent" value="74383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/policyManagement/policyRegisters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/authorizedUser/authUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -587,14 +561,6 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/companyQuote/quote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="140" column="39" lean-forward="false" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,14 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/policyManagement/policyLogins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="53" column="97" lean-forward="false" selection-start-line="53" selection-start-column="97" selection-end-line="53" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/cors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -630,50 +588,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/makeClaim/makeClaims.js">
+    <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="175" column="97" lean-forward="false" selection-start-line="175" selection-start-column="97" selection-end-line="175" selection-end-column="97" />
+        <state relative-caret-position="330">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/authorizedUser/authUsers.js">
+    <entry file="file://$PROJECT_DIR$/models/companyQuote/quote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="44" column="97" lean-forward="false" selection-start-line="44" selection-start-column="97" selection-end-line="44" selection-end-column="97" />
+        <state relative-caret-position="2100">
+          <caret line="140" column="39" lean-forward="false" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/CRMAdmin/admin.js">
+    <entry file="file://$PROJECT_DIR$/routes/policyManagement/policyRegisters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="98" column="97" lean-forward="false" selection-start-line="98" selection-start-column="97" selection-end-line="98" selection-end-column="97" />
+        <state relative-caret-position="330">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/policyManagement/policyLogins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1199">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/partnership/partnership.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="168" column="0" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+        <state relative-caret-position="-1650">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/routes.js">
+    <entry file="file://$PROJECT_DIR$/routes/makeClaim/makeClaims.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        <state relative-caret-position="465">
+          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startup/prod.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/authorizedUser/authUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/CRMAdmin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -682,14 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -9,9 +9,6 @@ const {AuthUser, authValidation} = require('../../models/authorizedUser/authUser
 
 
 router.get('/me', auth, async (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     const authUser = await AuthUser.findOne(req.authUser._id).select(['-_id', '-__v']);
     res.send({result: authUser});
@@ -20,9 +17,7 @@ router.get('/me', auth, async (req, res) => {
 
 
 router.post('/', async (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
     const { error } = authValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
     let authUser = await AuthUser.findOne({email: req.body.email});
@@ -40,9 +35,7 @@ router.post('/', async (req, res) => {
 
 
 router.put('/:id', [auth, admin], async (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
     const { error } = authValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 

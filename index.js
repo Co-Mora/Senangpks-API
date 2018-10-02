@@ -7,8 +7,8 @@ require('./startup/prod')(app);
 require('./startup/logging')();
 require('./startup/db')();
 
-const {allowCrossDomain} = require('./middleware/cors');
-app.use(allowCrossDomain);
+// const {allowCrossDomain} = require('./middleware/cors');
+// app.use(allowCrossDomain);
 
 
 const port = process.env.PORT || 3000;

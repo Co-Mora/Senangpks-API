@@ -6,14 +6,9 @@ require('./startup/routes')(app);
 require('./startup/prod')(app);
 require('./startup/logging')();
 require('./startup/db')();
+
 const {allowCrossDomain} = require('./middleware/cors');
 app.use(allowCrossDomain);
-
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
 
 
 const port = process.env.PORT || 3000;

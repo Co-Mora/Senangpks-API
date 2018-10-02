@@ -7,7 +7,9 @@ const auth = require('../../middleware/auth');
 const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const makeClaims = await MakeClaim.find().select(['-_id', '-__v', '-password']).sort('companyNo');
     res.send({result: {makeClaims,  count: makeClaims.length}});
 
@@ -15,7 +17,9 @@ router.get('/', async (req, res) => {
 
 
 router.get('/:id', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const makeClaim = await MakeClaim.find({companyNo: req.params.id}).select(['-_id', '-__v', '-password']).sort('companyNo');
     
     if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "Not Found"}})
@@ -26,7 +30,9 @@ router.get('/:id', async (req, res) => {
 
 
 router.post('/login/verify', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
@@ -44,7 +50,9 @@ router.post('/login/verify', async (req, res) => {
 
 
 router.post('/password/reset', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
@@ -76,7 +84,9 @@ router.post('/password/reset', async (req, res) => {
 
 
 router.post('/', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
@@ -130,7 +140,9 @@ router.post('/', async (req, res) => {
 
 router.put('/update/:id', [auth, admin], async(req, res) => {
 
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const { error } = claimValidation(req.body);
 
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
@@ -159,7 +171,9 @@ router.put('/update/:id', [auth, admin], async(req, res) => {
 
 
 router.delete('/:id', [auth, admin], async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     const makeClaim = await MakeClaim.remove({claimID: req.params.id});
 

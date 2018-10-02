@@ -7,7 +7,9 @@ const auth = require('../../middleware/auth');
 const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const policyLogin = await PolicyLogin.find().select(['-_id', '-__v', '-password']).sort('companyNumber');
     res.send({result: {policyLogin, count: policyLogin.length}});
 
@@ -15,7 +17,9 @@ router.get('/', async (req, res) => {
 
 
 router.get('/:id', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const policyLogin = await PolicyLogin.find({companyNumber: req.params.id}).select(['-_id', '-__v', '-password']).sort('companyNumber');
 
     if(!policyLogin) return res.status(404).send({result: {statusCode: 404}});
@@ -26,7 +30,9 @@ router.get('/:id', async (req, res) => {
 
 
 router.post('/verify', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = policyLoginValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
@@ -43,7 +49,9 @@ router.post('/verify', async (req, res) => {
 
 
 router.post('/set', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = policyLoginValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 

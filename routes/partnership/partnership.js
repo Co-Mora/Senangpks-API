@@ -10,7 +10,9 @@ const _ = require('lodash');
 
 //5baf291087ace70b1eba2101
 router.get('/:id', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const partnership = await Partnership.find({partnerID: req.params.id}).select(['-_id', '-__v']).sort('companyName');
     if(!partnership) return res.status(404).send({result: {statusCode: 404, error: "Not Found"}});
 
@@ -41,7 +43,9 @@ router.get('/:id', async (req, res) => {
 
 router.post('/me/:id', auth, async (req, res) => {
 
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const authUser = await AuthUser.findOne({partnerID: req.params.id});
     if(!authUser) return res.status(404).send({result: {statusCode: 404, error: "INVALID_API_KEY"}});
 
@@ -64,7 +68,9 @@ router.post('/me/:id', auth, async (req, res) => {
 });
 
 router.post('/me/:id/quote', auth, async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
@@ -107,7 +113,9 @@ router.post('/me/:id/quote', auth, async (req, res) => {
 
 
 router.post('/me/:id/claim/:companyNo', auth, async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
@@ -139,7 +147,9 @@ router.post('/me/:id/claim/:companyNo', auth, async (req, res) => {
 
 
 router.post('/me/:id/policy', auth, async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let { error } = partnerPolicyValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 

@@ -6,14 +6,18 @@ const auth = require('../../middleware/auth');
 const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const admins = await Admin.find().select(['-__v, -_id']).sort("username");
     res.send({result: {admins}});
 
 });
 
 router.get('/:id', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const admin = await Admin.find({adminID: req.params.id}).select(['-__v, -_id']).sort('username');
 
     if(!admin) return res.status(404).send({result: {statusCode: 404, error: "INVALID_ADMIN_ID"}});
@@ -24,7 +28,9 @@ router.get('/:id', async (req, res) => {
 
 
 router.post('/user/verify', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let {error} = adminValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}})
 
@@ -41,7 +47,9 @@ router.post('/user/verify', async (req, res) => {
 
 
 router.post('/add', async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let {error} = adminValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}})
 
@@ -63,7 +71,9 @@ router.post('/add', async (req, res) => {
 
 
 router.put('/update/:id', [auth, admin], async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let {error} = adminValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}})
 
@@ -84,7 +94,9 @@ router.put('/update/:id', [auth, admin], async (req, res) => {
 
 
 router.delete('/:id', [auth, admin], async (req, res) => {
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const admin = await Admin.remove({adminID: req.params.id});
 
     if(!admin) return res.status(404).send({result: {statusCode: 404, error: "INVALID_ID"}})

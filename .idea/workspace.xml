@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4979e71-d21a-43cd-968e-83e6be9e97e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change beforePath="$PROJECT_DIR$/middleware/cors.js" afterPath="$PROJECT_DIR$/middleware/cors.js" />
-      <change beforePath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" afterPath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
-      <change beforePath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" afterPath="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
-      <change beforePath="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" afterPath="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
-      <change beforePath="$PROJECT_DIR$/routes/partnership/partnership.js" afterPath="$PROJECT_DIR$/routes/partnership/partnership.js" />
-      <change beforePath="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" afterPath="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
+      <change beforePath="$PROJECT_DIR$/routes/companyQuote/quotes.js" afterPath="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +19,8 @@
       <file leaf-file-name="quotes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="-146">
+              <caret line="80" column="100" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="80" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -171,7 +165,6 @@
         <option value="$PROJECT_DIR$/startup/routes.js" />
         <option value="$PROJECT_DIR$/models/companyQuote/quote.js" />
         <option value="$PROJECT_DIR$/startup/prod.js" />
-        <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
         <option value="$PROJECT_DIR$/routes/authorizedUser/authUsers.js" />
         <option value="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
         <option value="$PROJECT_DIR$/routes/makeClaim/makeClaims.js" />
@@ -179,6 +172,7 @@
         <option value="$PROJECT_DIR$/routes/policyManagement/policyLogins.js" />
         <option value="$PROJECT_DIR$/middleware/cors.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/routes/companyQuote/quotes.js" />
       </list>
     </option>
   </component>
@@ -349,12 +343,12 @@
       <workItem from="1538472222250" duration="1985000" />
       <workItem from="1538474411616" duration="30000" />
       <workItem from="1538474458759" duration="2055000" />
-      <workItem from="1538492662563" duration="2759000" />
+      <workItem from="1538492662563" duration="3034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72874000" />
+    <option name="totallyTimeSpent" value="73149000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/companyQuote/quotes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="-146">
+          <caret line="80" column="100" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="80" selection-end-column="100" />
           <folding />
         </state>
       </provider>

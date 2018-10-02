@@ -76,9 +76,9 @@ router.post('/create/first', async (req, res) => {
 
 router.post('/create/second', async (req, res) => {
 
-    // res.header("Access-Control-Allow-Origin", "*");
-    // res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
-    // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     const { error } = quoteValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});

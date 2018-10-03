@@ -68,10 +68,6 @@ router.post('/create', async (req, res) => {
         ]));
 
         await quote.save();
-
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         res.send({result: quote});
 
 

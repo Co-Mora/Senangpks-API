@@ -50,7 +50,6 @@ router.post('/set', async (req, res) => {
     const quote = await Quote.findOne({companyNumber: req.body.companyNumber});
     if(!quote) return res.status(404).send({result: {statusCode: 404, error: "INVALID COMPANY NUMBER"}});
 
-
     let policyLogin = new PolicyLogin({
         companyNumber: req.body.companyNumber,
         password: req.body.password,

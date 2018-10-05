@@ -31,10 +31,10 @@ router.post('/login/verify', async (req, res) => {
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
 
-    let makeClaim = await MakeClaim.find({companyNo: req.body.companyNo});
+    let makeClaim = await MakeClaim.findOne({companyNo: req.body.companyNo});
     if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}});
 
-    let validPassword = await  bcrypt.compare(req.body.password, makeClaim.password);
+    let validPassword = await bcrypt.compare(req.body.password, makeClaim.password);
     if(!validPassword) return res.status(404).send({result: {statusCode: 404, error: "INVALID_PASSWORD"}});
 
     res.send({result: {statusCode: 200, message: true}});
@@ -49,7 +49,7 @@ router.post('/password/reset', async (req, res) => {
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
 
-    let makeClaim = await MakeClaim.find({companyNo: req.body.companyNo});
+    let makeClaim = await MakeClaim.findOne({companyNo: req.body.companyNo});
     if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}});
 
     let salt = await bcrypt.genSalt(10);

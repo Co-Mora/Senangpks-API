@@ -30,11 +30,12 @@ router.post('/verify', async (req, res) => {
     let { error } = policyLoginValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
-    let policyLogin = await PolicyLogin.find({companyNumber: req.body.companyNumber});
-    if(!policyLogin) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}});
+    let policyLogin = await PolicyLogin.findOne({companyNumber: req.body.companyNumber});
+    if(!policyLogin) return res.status(400).send({result: {statusCode: 400, error: "INVALID_COMPANY_NUMBER"}});
 
     let validPassword = await bcrypt.compare(req.body.password, policyLogin.password);
-    if(!validPassword) return res.status(400).send({result: {statusCode: 404, error: "INVALID_PASSWORD"}})
+
+    if(!validPassword) return res.status(400).send({result: {statusCode: 400, error: "INVALID_PASSWORD"}});
 
     res.send({result: {statusCode: 200, message: true}});
 
@@ -79,8 +80,7 @@ router.post('/set', async (req, res) => {
 
     });
 
-    const salt = await bcrypt.genSalt(10);
-    policyLogin.password = await bcrypt.hash(policyLogin.password, salt);
+    policyLogin.password = await bcrypt.hash(policyLogin.password, 10);
 
     await policyLogin.save();
     res.send({result: {statusCode: 200, message: "OK"}});

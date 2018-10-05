@@ -50,6 +50,7 @@ router.post('/set', async (req, res) => {
     const quote = await Quote.findOne({companyNumber: req.body.companyNumber});
     if(!quote) return res.status(404).send({result: {statusCode: 404, error: "INVALID COMPANY NUMBER"}});
 
+
     let policyLogin = new PolicyLogin({
         companyNumber: req.body.companyNumber,
         password: req.body.password,
@@ -78,7 +79,7 @@ router.post('/set', async (req, res) => {
 
     });
 
-    const salt = bcrypt.genSalt(10);
+    const salt = await bcrypt.genSalt(10);
     policyLogin.password = await bcrypt.hash(policyLogin.password, salt);
 
     await policyLogin.save();

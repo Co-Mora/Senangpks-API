@@ -7,7 +7,7 @@ const admin = require('../../middleware/admin');
 
 router.get('/', async (req, res) => {
 
-    const admins = await Admin.find().select(['-__v, -_id']).sort("username");
+    const admins = await Admin.find().select(['-__v', '-_id', '-password']).sort("username");
     res.send({result: {admins}});
 
 });

@@ -28,7 +28,7 @@ router.post('/user/verify', async (req, res) => {
     let {error} = adminValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}})
 
-    let admin = await Admin.find({username: req.body.username});
+    let admin = await Admin.findOne({username: req.body.username});
     if(!admin) return res.status(404).send({result: {statusCode: 404, error: "INVALID_USERNAME"}});
 
     let validPassword = await bcrypt.compare(req.body.password, admin.password);
@@ -43,12 +43,12 @@ router.post('/user/verify', async (req, res) => {
 router.post('/add', async (req, res) => {
 
     let {error} = adminValidation(req.body);
-    if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}})
+    if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
-    let admin = await Admin.find({username: req.body.username});
-    if(!admin) return res.status(400).send({result: {statusCode: 400, error: "USERNAME_EXIST_ALREADY"}});
+    // let admin = await Admin.find({username: req.body.username});
+    // if(admin) return res.status(400).send({result: {statusCode: 400, error: "USERNAME_EXIST_ALREADY"}});
 
-    admin = new Admin({
+    let admin = new Admin({
         username: req.body.username,
         password: req.body.password
     });

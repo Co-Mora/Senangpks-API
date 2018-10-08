@@ -44,7 +44,6 @@ router.post('/add', async (req, res) => {
 
     let {error} = adminValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
-
     // let admin = await Admin.find({username: req.body.username});
     // if(admin) return res.status(400).send({result: {statusCode: 400, error: "USERNAME_EXIST_ALREADY"}});
 

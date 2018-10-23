@@ -83,15 +83,15 @@ router.put('/update/:id', [auth, admin], async (req, res) => {
 
 });
 
-//
-// router.delete('/:id', [auth, admin], async (req, res) => {
-//
-//     const admin = await Admin.remove({adminID: req.params.id});
-//
-//     if(!admin) return res.status(404).send({result: {statusCode: 404, error: "INVALID_ID"}})
-//
-//     res.send({result: {statusCode: 200, message: "OK"}});
-// });
+
+router.delete('/:id', [auth, admin], async (req, res) => {
+
+    const admin = await Admin.remove({adminID: req.params.id});
+
+    if(!admin) return res.status(404).send({result: {statusCode: 404, error: "INVALID_ID"}})
+
+    res.send({result: {statusCode: 200, message: "OK"}});
+});
 
 
 module.exports = router;

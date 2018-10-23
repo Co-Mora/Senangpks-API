@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4979e71-d21a-43cd-968e-83e6be9e97e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" afterPath="$PROJECT_DIR$/routes/CRMAdmin/admin.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -312,12 +310,12 @@
       <workItem from="1539015303036" duration="240000" />
       <workItem from="1539224756206" duration="614000" />
       <workItem from="1539247741780" duration="574000" />
-      <workItem from="1540285703605" duration="46000" />
+      <workItem from="1540285703605" duration="175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84807000" />
+    <option name="totallyTimeSpent" value="84936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

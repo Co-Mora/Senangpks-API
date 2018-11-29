@@ -8,6 +8,7 @@ const {MakeClaim} = require('../../models/makeClaim/makeClaim');
 
 const validateObjectId = require('../../middleware/validateObjectId');
 
+
 router.get('/', async (req, res) => {
 
 
@@ -183,7 +184,7 @@ router.put('/update/:id', [auth, admin], async (req, res) => {
 
     if(!quote) return res.status(404).send({result: {statusCode: 404}});
 
-    res.send({result: {statusCode: 200, message: "OK"}});
+    res.send({result: {statusCode: 200, message: "Updated Successfully"}});
 
 });
 

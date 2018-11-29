@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
 });
 
 
-router.post('/set', async (req, res) => {
+router.post('/create', async (req, res) => {
 
     const { error } = registerValidation(req.body);
 
@@ -61,7 +61,7 @@ router.put('/update/:id', [auth, admin], async (req, res) => {
 
 router.delete('/:id', [auth, admin], async (req, res) => {
 
-    const registerUser = await PolicyRegister.remove({companyID: req.params.id});
+    const registerUser = await PolicyRegister.remove({registerID: req.params.id});
 
     if(!registerUser) return res.status(404).send({result: {statusCode: 404}});
 

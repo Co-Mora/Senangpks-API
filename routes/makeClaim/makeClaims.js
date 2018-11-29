@@ -68,20 +68,20 @@ router.post('/password/reset', async (req, res) => {
     }, {new: true});
 
 
-    res.send({result: {statusCode: 200, newClaim: makeClaim}});
+    res.send({result: {statusCode: 200, message: true}});
 
 
 });
 
 
 
-router.post('/', async (req, res) => {
+router.post('/create', async (req, res) => {
 
     let { error } = claimValidation(req.body);
     if(error) return res.status(400).send({result: {statusCode: 400, errors: error.details[0].message}});
 
     const quote = await Quote.findOne({companyNumber: req.body.companyNo});
-    if(!quote) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}})
+    if(!quote) return res.status(404).send({result: {statusCode: 404, error: "INVALID_COMPANY_NUMBER"}});
 
     let makeClaim = new MakeClaim({
         companyNo: req.body.companyNo,
@@ -149,7 +149,7 @@ router.put('/update/:id', [auth, admin], async(req, res) => {
 
     }, {new: true});
 
-    if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID claimID"}})
+    if(!makeClaim) return res.status(404).send({result: {statusCode: 404, error: "INVALID claimID"}});
 
 
     res.send({result: makeClaim});

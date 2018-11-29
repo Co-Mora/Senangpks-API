@@ -46,7 +46,7 @@ router.put('/:id', [auth, admin], async (req, res) => {
         websiteUrl: req.body.websiteUrl
     }, {new: true});
 
-    res.send({result: {user: authUser, statusCode: 200, message: "Updated Successfully"}});
+    res.send({result: {statusCode: 200, message: "Updated Successfully"}});
 
 });
 

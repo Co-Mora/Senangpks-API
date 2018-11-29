@@ -1,15 +1,7 @@
 const express = require('express');
 const winston = require('winston');
 const app = express();
-const router = express.Router();
 
-router.get('/api', (req, res) => {
-    res.send("API WORKS");
-});
-
-router.get('/api/v1', (req, res) => {
-    res.send("Im Lost");
-});
 
 
 require('./startup/prod')(app);

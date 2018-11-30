@@ -15,7 +15,7 @@ const routing = require('../routes/config/routing');
 module.exports = function (app) {
     app.use(express.json());
     app.use(express.urlencoded({extended: true}));
-    app.use('/api', routing);
+    app.use('/', routing);
     app.use('/api/v1/quotes', quotes);
     app.use('/api/v1/register/policy', registerPolicies);
     app.use('/api/v1/claim', makeClaims);

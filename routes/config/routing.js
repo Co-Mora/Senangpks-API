@@ -2,11 +2,15 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send("API WORKS");
+    res.send("Developed By Omar");
+});
+
+router.get('/api', (req, res) => {
+    res.send("API Work");
 });
 
 router.get('/v1', (req, res) => {
-    res.send("Im Lost");
+    res.send("I'm Lost");
 });
 
 

@@ -9,7 +9,7 @@ router.get('/api', (req, res) => {
     res.send("API Work");
 });
 
-router.get('/v1', (req, res) => {
+router.get('api/v1', (req, res) => {
     res.send("I'm Lost");
 });
 

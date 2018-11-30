@@ -13,7 +13,7 @@ router.get('/me', auth, async (req, res) => {
     const authUser = await AuthUser.findOne(req.authUser._id).select(['-_id', '-__v']);
     res.send({result: authUser});
 
-});
+})
 
 
 router.post('/', async (req, res) => {
